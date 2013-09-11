@@ -1,0 +1,30 @@
+2013-09-10 23:25:43 Error: [MissingPluginException] Plugin PagSeguro could not be found.
+Exception Attributes: array (
+  'plugin' => 'PagSeguro',
+)
+Request URL: /desenvolvimento/consultas-pagseguro/
+Stack Trace:
+#0 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(367): CakePlugin::path('PagSeguro')
+#1 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(228): App::pluginPath('PagSeguro')
+#2 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'PagSeguro')
+#3 [internal function]: App::load('CarrinhoCompone...')
+#4 [internal function]: spl_autoload_call('CarrinhoCompone...')
+#5 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Controller/ComponentCollection.php(110): class_exists('CarrinhoCompone...')
+#6 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('PagSeguro.Carri...', Array)
+#7 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Routing/Dispatcher.php(183): Controller->constructClasses()
+#9 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /var/www/desenvolvimento/consultas-pagseguro/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-09-10 23:26:18 Error: [MissingViewException] View file "/var/www/desenvolvimento/consultas-pagseguro/app/View/Pages/consulta.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/desenvolvimento/consultas-pagseguro/app/View/Pages/consulta.ctp',
+)
+Request URL: /desenvolvimento/consultas-pagseguro/
+Stack Trace:
+#0 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/View/View.php(459): View->_getViewFileName(NULL)
+#1 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/desenvolvimento/consultas-pagseguro/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
