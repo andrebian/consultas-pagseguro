@@ -29,7 +29,14 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('style');
+                
+                echo $this->Html->script('plugins/jquery-1.7.min');
+                echo $this->Html->script('plugins/jquery-ui-1.8.16.custom.min');
+                echo $this->Html->script('plugins/colorpicker');
+                echo $this->Html->script('custom/general');
+                echo $this->Html->script('custom/elements');
+                echo $this->Html->script('custom/tables');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -46,26 +53,41 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 
     </script>
 </head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
+<body class="loggedin">
 
-			<?php echo $this->Session->flash(); ?>
+	<!-- START OF HEADER -->
+	<div class="header radius3">
+    	<div class="headerinner">
+            <h1 style="color:white;">Consultas PagSeguro</h1>
+        </div><!--headerinner-->
+	</div><!--header-->
+    <!-- END OF HEADER -->
+        
+    <!-- START OF MAIN CONTENT -->
+    <div class="mainwrapper">
+     	<div class="mainwrapperinner">
+         	
+        
+        <div class="maincontent">
+        	<div class="maincontentinner">
+            	
+                <?php echo $this->Session->flash(); ?>
 
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+		<?php echo $this->fetch('content'); ?>
+                
+                </div><!--maincontentinner-->
+            
+            <div class="footer">
+            	<p>Desenvolvido por : <a href="http://andrebian.com">Andre Cardoso</a></p>
+            </div><!--footer-->
+            
+        </div><!--maincontent-->
+        
+                
+     	</div><!--mainwrapperinner-->
+    </div><!--mainwrapper-->
+	<!-- END OF MAIN CONTENT -->
+    
+
 </body>
 </html>

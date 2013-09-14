@@ -64,15 +64,12 @@ class PagesController extends AppController {
 
                     if ($this->Carrinho->obterInformacoesTransacao($transacaoId)) {
 
-                        debug($this->Carrinho->obterDadosUsuario());
+                        $dadosUsuario = $this->Carrinho->obterDadosUsuario();
+                        $statusTransacao = $this->Carrinho->obterStatusTransacao();
+                        $dadosPagamento = $this->Carrinho->obterDadosPagamento();
+                        $dataTransacao = $this->Carrinho->obterDataTransacao();
+                        $valores = $this->Carrinho->obterValores();
                         
-                        debug($this->Carrinho->obterStatusTransacao());
-                        
-                        debug($this->Carrinho->obterDadosPagamento());
-                        
-                        debug($this->Carrinho->obterDataTransacao());
-                        
-                        debug($this->Carrinho->obterValores());
                     }
                 } else {
                     
@@ -80,25 +77,26 @@ class PagesController extends AppController {
 
                     if ( $this->Notificacao->obterDadosTransacao('transaction', $this->request->data['Consulta']['codigo']) ) {
                         
-                        debug($this->Notificacao->obterDadosUsuario());
+                        $dadosUsuario = $this->Notificacao->obterDadosUsuario();
+                        $statusTransacao = $this->Notificacao->obterStatusTransacao();
+                        $dadosPagamento = $this->Notificacao->obterDadosPagamento();
+                        $dataTransacao = $this->Notificacao->obterDataTransacao();
+                        $valores = $this->Notificacao->obterValores();
                         
-                        debug($this->Notificacao->obterStatusTransacao());
-                        
-                        debug($this->Notificacao->obterDadosPagamento());
-                        
-                        debug($this->Notificacao->obterDataTransacao());
-                        
-                        debug($this->Notificacao->obterValores());
                     }
                 }
                 
-                if ( $this->request->data['Consulta']['armazenar'] == 1 ) {
+                if ( $this->request->data['Consulta']['armazenar'] == 'on' ) {
                     $this->Session->write('email', $this->request->data['Consulta']['email']);
                     $this->Session->write('token', $this->request->data['Consulta']['token']);
                 } else {
                     $this->Session->delete('email');
                     $this->Session->delete('token');
                 }
+                
+                $this->set(compact('dadosUsuario', 'statusTransacao', 'dadosPagamento', 'dataTransacao', 'valores'));
+                
+                $this->view = 'resultado';
             }
         }
 }
