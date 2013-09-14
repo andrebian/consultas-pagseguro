@@ -136,9 +136,9 @@
                                     <td><?php echo $produto['id']; ?></td>
                                     <td><?php echo $produto['descricao']; ?></td>
                                     <td><?php echo $produto['quantidade']; ?></td>
-                                    <td><?php echo $produto['valorUnitario']; ?></td>
+                                    <td>R$ <?php echo number_format($produto['valorUnitario'], 2, ',', '.'); ?></td>
                                     <td><?php echo $produto['peso']; ?></td>
-                                    <td><?php echo $produto['frete']; ?></td>
+                                    <td>R$ <?php echo number_format($produto['frete'], 2, ',', '.'); ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         <?php endif; ?>
