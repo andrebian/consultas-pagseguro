@@ -230,3 +230,7 @@
 {2013/09/11 00:05:40} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=1, itemsCount=2) 
 {2013/09/11 00:07:04} [Info] PagSeguroTransactionSearchService.SearchByCode(48E72AA1-0B74-4C96-BE91-1D35BF5ACDE7) - begin 
 {2013/09/11 00:07:05} [Error] PagSeguroTransactionSearchService.SearchByCode(transactionCode=48E72AA1-0B74-4C96-BE91-1D35BF5ACDE7) - error [HTTP 401] - UNAUTHORIZED  
+{2013/09/14 01:43:19} [Info] PagSeguroNotificationService.CheckTransaction(notificationCode=4DF6FC-C48E3A8E3A59-B444363FB655-F48A4F) - begin 
+{2013/09/14 01:45:33} [Info] PagSeguroNotificationService.CheckTransaction(notificationCode=4DF6FC-C48E3A8E3A59-B444363FB655-F48A4F) - begin 
+{2013/09/14 01:49:56} [Info] PagSeguroNotificationService.CheckTransaction(notificationCode=4DF6FC-C48E3A8E3A59-B444363FB655-F48A4F) - begin 
+{2013/09/14 01:49:57} [Info] PagSeguroNotificationService.CheckTransaction(notificationCode=4DF6FC-C48E3A8E3A59-B444363FB655-F48A4F) - end Transaction(Code=2FAC8B07-E146-4811-8244-8F48D8E2D622, SenderEmail=gmgubert@gmail.com, Date=2013-09-12T13:53:02.000-03:00, Reference=136, status=1, itemsCount=11)) 

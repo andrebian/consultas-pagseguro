@@ -28,3 +28,23 @@ Stack Trace:
 #3 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
 #4 /var/www/desenvolvimento/consultas-pagseguro/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2013-09-14 01:43:19 Error: Fatal Error (1): Call to a member function getAttributesMap() on a non-object in [/var/www/desenvolvimento/consultas-pagseguro/app/Plugin/PagSeguro/Vendor/PagSeguroLibrary/service/PagSeguroConnectionData.class.php, line 58]
+2013-09-14 01:43:19 Error: [FatalErrorException] Call to a member function getAttributesMap() on a non-object
+Request URL: /desenvolvimento/consultas-pagseguro/
+Stack Trace:
+#0 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desenv...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desenv...', 58, Array)
+#2 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desenv...', 58, Array)
+#3 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-09-14 01:45:33 Error: Fatal Error (1): Call to a member function getAttributesMap() on a non-object in [/var/www/desenvolvimento/consultas-pagseguro/app/Plugin/PagSeguro/Vendor/PagSeguroLibrary/service/PagSeguroConnectionData.class.php, line 58]
+2013-09-14 01:45:33 Error: [FatalErrorException] Call to a member function getAttributesMap() on a non-object
+Request URL: /desenvolvimento/consultas-pagseguro/
+Stack Trace:
+#0 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/desenv...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/desenv...', 58, Array)
+#2 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/desenv...', 58, Array)
+#3 /var/www/desenvolvimento/consultas-pagseguro/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

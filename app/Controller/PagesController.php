@@ -38,38 +38,28 @@ class PagesController extends AppController {
  */
 	public $name = 'Pages';
 
-/**
- * This controller does not use a model
- *
- * @var array
- */
-	public $uses = array();
         public $components = array('PagSeguro.Carrinho', 'PagSeguro.Notificacao', 'PagSeguro.Consulta');
-
-/**
- * Displays a view
- *
- * @param mixed What page to display
- * @return void
- */
-	public function display() {
-                
-	}
         
+        
+        protected function _setCredenciais($email, $token, $component = 'Carrinho')
+        {
+            if ( $this->Session->read('email') && $this->Session->read('token') ) {
+                    $this->{$component}->setCredenciais($this->Session->read('email'), 
+                        $this->Session->read('token'));
+                } else {
+                    $this->{$component}->setCredenciais($this->request->data['Consulta']['email'], 
+                        $this->request->data['Consulta']['token']);
+                }
+        }
         
         public function consulta()
         {
             if ( $this->request->is('post') ) {
                 
-                if ( $this->Session->read('email') && $this->Session->read('token') ) {
-                    $this->Carrinho->setCredenciais($this->Session->read('email'), 
-                        $this->Session->read('token'));
-                } else {
-                    $this->Carrinho->setCredenciais($this->request->data['Consulta']['email'], 
-                        $this->request->data['Consulta']['token']);
-                }
-                
                 if ($this->request->data['Consulta']['tipo'] == 'transaction') {
+                    
+                    $this->_setCredenciais($this->request->data['Consulta']['email'], $this->request->data['Consulta']['token']);
+                    
                     $transacaoId = $this->request->data['Consulta']['codigo'];
 
                     if ($this->Carrinho->obterInformacoesTransacao($transacaoId)) {
@@ -85,8 +75,11 @@ class PagesController extends AppController {
                         debug($this->Carrinho->obterValores());
                     }
                 } else {
+                    
+                    $this->_setCredenciais($this->request->data['Consulta']['email'], $this->request->data['Consulta']['token'], 'Notificacao');
 
                     if ( $this->Notificacao->obterDadosTransacao('transaction', $this->request->data['Consulta']['codigo']) ) {
+                        
                         debug($this->Notificacao->obterDadosUsuario());
                         
                         debug($this->Notificacao->obterStatusTransacao());
