@@ -1306,9 +1306,4 @@ a.btn_table { background-position: -82px -480px; }
 	
 }
 
-.anuncio{
-background-color: #eee;
-width: 970px;
-float: left;
-margin-left: -15%;
-height: 90px;}
+.anuncio{width: 970px;float: left;margin-left: -15%;height: 90px;}
