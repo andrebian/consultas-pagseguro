@@ -357,7 +357,7 @@ class CarrinhoComponent extends Component{
                                 'descricao' => $item->getDescription() , 
                                 'quantidade' => $item->getQuantity(),
                                 'valorUnitario' => $item->getAmount(),
-                                'peso' => $item->getDescription(),
+                                'peso' => $item->getWeight(),
                                 'frete' => $item->getShippingCost()
                             );
         }

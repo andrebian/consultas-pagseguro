@@ -43,14 +43,13 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		echo $this->fetch('script');
 	?>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-43949823-1', 'andrebian.com');
-  ga('send', 'pageview');
-
+        ga('create', 'UA-43949823-1', 'andrebian.com');
+        ga('send', 'pageview');
     </script>
 </head>
 <body class="loggedin">
@@ -66,9 +65,21 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
     <!-- START OF MAIN CONTENT -->
     <div class="mainwrapper">
      	<div class="mainwrapperinner">
-         	
-        
+         
         <div class="maincontent">
+                <div class="anuncio">
+                    <script type="text/javascript">
+                        <!--
+                        google_ad_client = "ca-pub-2136784768929334";
+                        /* Topo Consultas Pagseguro */
+                        google_ad_slot = "4903579009";
+                        google_ad_width = 970;
+                        google_ad_height = 90;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </div>
+                <br /><br /><br /><br /><br /><br /><br />
         	<div class="maincontentinner">
             	
                 <?php echo $this->Session->flash(); ?>

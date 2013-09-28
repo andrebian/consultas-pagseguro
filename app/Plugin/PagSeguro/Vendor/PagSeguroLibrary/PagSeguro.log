@@ -298,3 +298,19 @@
 {2013/09/14 03:20:59} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=1, itemsCount=2) 
 {2013/09/14 03:21:10} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
 {2013/09/14 03:21:10} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=1, itemsCount=2) 
+{2013/09/28 15:33:45} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:33:46} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
+{2013/09/28 15:37:14} [Info] PagSeguroTransactionSearchService.SearchByCode() - begin 
+{2013/09/28 15:37:15} [Error] PagSeguroTransactionSearchService.SearchByCode(transactionCode=) - error [HTTP 400] - BAD_REQUEST [13004] - initialDate is required. 
+{2013/09/28 15:37:20} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:37:21} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
+{2013/09/28 15:37:44} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:37:45} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
+{2013/09/28 15:39:28} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:39:29} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
+{2013/09/28 15:51:10} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:51:11} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
+{2013/09/28 15:51:45} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:51:45} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
+{2013/09/28 15:52:24} [Info] PagSeguroTransactionSearchService.SearchByCode(011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - begin 
+{2013/09/28 15:52:25} [Info] PagSeguroTransactionSearchService.SearchByCode(transactionCode=011FA21E-062B-4BF8-A19C-BE8AAB74D29A) - end Transaction(Code=011FA21E-062B-4BF8-A19C-BE8AAB74D29A, SenderEmail=gmgubert@gmail.com, Date=2013-09-09T21:50:44.000-03:00, Reference=129, status=7, itemsCount=2) 
