@@ -18,7 +18,7 @@ $PagSeguroConfig['application'] = Array();
 $PagSeguroConfig['application']['charset'] = "ISO-8859-1"; // UTF-8, ISO-8859-1
 
 $PagSeguroConfig['log'] = Array();
-$PagSeguroConfig['log']['active'] = TRUE;
+$PagSeguroConfig['log']['active'] = FALSE;
 $PagSeguroConfig['log']['fileLocation'] = "";
 
 ?>
