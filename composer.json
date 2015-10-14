@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "andrebian/pag_seguro": "^2.1"
+        "andrebian/pag_seguro": "dev-master"
     },
     "extra": {
         "installer-paths": {
