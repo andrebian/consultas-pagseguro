@@ -42,6 +42,16 @@ class PagesController extends AppController
 
     protected function _setCredenciais($email, $token, $component = 'RetornoPagSeguro')
     {
+        $sessionEmail = $this->Session->read('email');
+        if(!empty($sessionEmail) &&   $email != $sessionEmail) {
+            $this->Session->write('email', $email);
+        }
+        
+        $tokenSession = $this->Session->read('token');
+        if(!empty($tokenSession) &&  $token != $tokenSession) {
+            $this->Session->write('token', $token);
+        }
+        
         if ($this->Session->read('email') && $this->Session->read('token')) {
             $this->{$component}->setCredenciais($this->Session->read('email'), $this->Session->read('token'));
         } else {
@@ -56,6 +66,7 @@ class PagesController extends AppController
             if ($this->request->data['Consulta']['tipo'] == 'transaction') {
 
                 $transacaoId = $this->request->data['Consulta']['codigo'];
+                $this->_setCredenciais($this->request->data['Consulta']['email'], $this->request->data['Consulta']['token'], 'RetornoPagSeguro');
 
                 if ($this->RetornoPagSeguro->obterInformacoesTransacao($transacaoId)) {
 
