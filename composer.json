@@ -1,0 +1,18 @@
+{
+    "name": "andrebian/consultas-pagseguro",
+    "description": "Uma aplicação para consultas do PagSeguro",
+    "authors": [
+        {
+            "name": "Andre Cardoso",
+            "email": "andrecardosodev@gmail.com"
+        }
+    ],
+    "require": {
+        "andrebian/pag_seguro": "^2.1"
+    },
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/PagSeguro": ["andrebian/pag_seguro"]
+        }
+    }
+}
