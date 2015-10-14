@@ -107,3 +107,16 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+Configure::write('PagSeguro', array(
+    'email' => 'seu-email-cadastrado@pagseguro',
+    'token' => 'seu-token',
+    'isSandbox' => true,
+));
+
+Configure::write('PagSeguro.credenciais', array(
+    'email' => 'seu-email-cadastrado@pagseguro',
+    'token' => 'seu-token',
+    'isSandbox' => true,
+));

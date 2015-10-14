@@ -21,3 +21,4 @@ fabfile*
 vendor
 composer.lock
 app/Plugin/PagSeguro
+app/tmp
